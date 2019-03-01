@@ -1,0 +1,348 @@
+@charset "UTF-8";
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #333;
+  font-family: "游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro",メイリオ,Meiryo,sans-serif;
+}
+
+/* ---------------------------------
+  見出し
+------------------------------------ */
+.title {
+  width: 475px;
+  margin: 0 auto;
+  padding: 139px 0 212px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 1.625;
+}
+
+h1 {
+  margin-bottom: 45px;
+}
+
+.title .pt1 {
+  border-bottom: 3px solid #3F51B5;
+}
+.title .pt2 {
+  border-bottom: 3px dotted #3F51B5;
+}
+.title .pt3 {
+  background-color: #3F51B5;
+  color: #fff;
+  padding: 5px 0 5px 10px;
+}
+.title .pt4 {
+  background-color: #7385E9;
+  color: #fff;
+  padding: 5px 0 5px 10px;
+  border-bottom: 3px solid #3F51B5;
+}
+.title .pt5 {
+  padding: 2.5px 0 2.5px 12px;
+  border-left: 5px solid #3F51B5;
+}
+.title .pt6 {
+  background: linear-gradient(transparent 50%, #DCEE38 50%);
+}
+.title .pt7 {
+  background: #DCEE38;
+}
+.title .pt8 {
+  background-color: #3F51B5;
+  color: #fff;
+  padding: 5px 0 5px 10px;
+  position: relative;
+}
+.title .pt8::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 12px 13.29px 0 13.29px;
+  border-color: #3f51b5 transparent transparent transparent;
+  position: absolute;
+  top: 100%;
+  left: 10%;
+  }
+  .title .pt9 {
+    position: relative;
+  }
+  .title .pt9::before {
+    content: '';
+    width: 20%;
+    height: 2px;
+    background-color: #B53F4F;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+  }
+  .title .pt9::after {
+    content: '';
+    width: 80%;
+    height: 2px;
+    background-color: #3F51B5;
+    position: absolute;
+    bottom: -6px;
+    left: 20%;
+  }
+  .title .pt10 {
+    position: relative;
+    padding-left: 16px;
+  }
+  .title .pt10::before {
+    content: '';
+    width: 4px;
+    height: 16px;
+    background-color: #3F51B5;
+    position: absolute;
+    left: 0px;
+    top: calc( 50% - 9px);
+  }
+  .title .pt11 {
+    text-align: center;
+    position: relative;
+  }
+  .title .pt11::after {
+    content: '';
+    width: 52px;
+    height: 4px;
+    background-color: #3F51B5;
+    position: absolute;
+    bottom: -16px;
+  }
+
+  .title .pt12 {
+    padding-left: 30px;
+    background: url("../images/check.svg") no-repeat left center ;
+  }
+  .title .pt13 {
+    position: relative;
+  }
+   .title .pt13::after {
+    content: '';
+    width: 19px;
+    height: 22px;
+    background: url("../images/glass.svg") no-repeat;
+    position: absolute;
+    top: -11px;
+    right: -29px;
+  }
+  .title .pt14 {
+    text-align: center;
+  }
+  .title .pt14 span {
+    position: relative;
+  }
+  .title .pt14 span::before {
+    content: '';
+    display: inline-block;
+    width: 3px;
+    height: 33px;
+    background-color: #3F51B5;
+    transform-origin: right bottom;
+    transform: rotate(-20deg);
+    position: absolute;
+    top: -5px;
+    left: -17px;
+  }
+  .title .pt14 span::after {
+    content: '';
+    display: inline-block;
+    width: 3px;
+    height: 33px;
+    background-color: #3F51B5;
+    transform-origin: right bottom;
+    transform: rotate(20deg);
+    position: absolute;
+    top: -5px;
+    right: -17px;
+  }
+  .title .pt15 {
+    text-align: center;
+  }
+  .title .pt15 span::before {
+    content: '';
+    display: inline-block;
+    width: 129px;
+    height: 3px;
+    background-color: #3F51B5;
+    vertical-align: middle;
+    margin-right: 10.5px;
+  }
+  .title .pt15 span::after {
+    content: '';
+    display: inline-block;
+    width: 129px;
+    height: 3px;
+    background-color: #3F51B5;
+    vertical-align: middle;
+    margin-left: 10.5px;
+  }
+  .title .pt16 {
+    padding: 5px 10px;
+    -webkit-background-size: 30px 30px;
+    -moz-background-size: 30px 30px;
+    background-size: 30px 30px;
+    background-color: #7385E9;
+    background-image: -webkit-gradient(linear, 0 0, 100% 100%,
+    color-stop(.25, #A6B9FE), color-stop(.25, transparent),
+    color-stop(.5, transparent), color-stop(.5, #A6B9FE),
+    color-stop(.75, #A6B9FE), color-stop(.75, transparent),
+    to(transparent));
+    background-image: -webkit-linear-gradient(-45deg, #A6B9FE 25%, transparent 25%,
+    transparent 50%, #A6B9FE 50%, #A6B9FE 75%,
+    transparent 75%, transparent);
+    background-image: -moz-linear-gradient(-45deg, #A6B9FE 25%, transparent 25%,
+    transparent 50%, #A6B9FE 50%, #A6B9FE 75%,
+    transparent 75%, transparent);
+    background-image: -ms-linear-gradient(-45deg, #A6B9FE 25%, transparent 25%,
+    transparent 50%, #A6B9FE 50%, #A6B9FE 75%,
+    transparent 75%, transparent);
+    background-image: -o-linear-gradient(-45deg, #A6B9FE 25%, transparent 25%,
+    transparent 50%, #A6B9FE 50%, #A6B9FE 75%,
+    transparent 75%, transparent);
+    background-image: linear-gradient(-45deg, #A6B9FE 25%, transparent 25%,
+    transparent 50%, #A6B9FE 50%, #A6B9FE 75%,
+    transparent 75%, transparent);
+  }
+
+  .title .pt17 {
+    position: relative;
+    padding: 5px 10px;
+
+  }
+  .title .pt17::after {
+    content: '';
+    position: absolute;
+    z-index: -10;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15px;
+    background: repeating-linear-gradient(-45deg, #A6B9FE, #A6B9FE 25%, #7385E9 25%, #7385E9 50%, #A6B9FE 50%, #A6B9FE 75%, #7385E9 75%, #7385E9);
+    background-size: 30px 30px;
+  }
+
+/* ---------------------------------
+  ボタン
+------------------------------------ */
+.btn {
+  padding: 0 0 276px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1.468;
+}
+
+p.w230 {
+  width: 230px;
+  margin: 0 auto 30px;
+}
+
+span {
+  display: inline-block;
+}
+
+.btn .pt1 {
+  background-color: #3F51B5;
+  color: #fff;
+  border-radius: 3px;
+  width: 230px;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 16px;
+}
+.btn .pt2 {
+  color: #fff;
+  border-radius: 3px;
+  width: 230px;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 16px;
+  background: url("../images/arrow.svg") no-repeat center right 12px;
+  background-color: #3F51B5;
+}
+.btn .pt3 {
+  color: #fff;
+  border-radius: 3px;
+  width: 230px;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 16px;
+  background: url("../images/arrow.svg") no-repeat center right 73px;
+  background-color: #3F51B5;
+}
+.btn .pt4 {
+  background-color: #3F51B5;
+  color: #fff;
+  border-radius: 3px;
+  width: 230px;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 35px;
+  box-shadow: 0 5px rgba(37, 55, 155, 1);
+}
+.btn .pt5 {
+  background: -moz-linear-gradient(top, #3F51B5, #20295B);
+  background: -webkit-gradient(linear, center top, center bottom, from(#3F51B5), to(#20295B));
+  color: #fff;
+  border-radius: 3px;
+  width: 230px;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 35px;
+}
+.btn .bg {
+  width: 100%;
+  background-color: #333;
+  border-top: 1px solid #707070;
+  border-bottom: 1px solid #707070;
+}
+.btn .bg p {
+  margin: 26px auto 28px;
+  width: 230px;
+}
+.btn .pt6 {
+  width: 230px;
+  height: 50px;
+  line-height: 50px;
+  border: 2px solid #fff;
+  padding-left: 35px;
+  color: #fff;
+}
+.btn .pt7_parent {
+  width: 123px;
+  margin: 27px auto 30px;
+}
+.btn .pt7 {
+  background-color: #3F51B5;
+  width: 123px;
+  height: 123px;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  padding: 38px 0;
+}
+.btn .pt9 {
+  color: #fff;
+  border-radius: 115px;
+  width: 230px;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 16px;
+  background: url("../images/arrow.svg") no-repeat center right 12px;
+  background-color: #3F51B5;
+}
+.btn .pt10 {
+  background-color: #3F51B5;
+  width: 230px;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  border-bottom: 3px solid #25379B;
+  padding-left: 35px;
+}
