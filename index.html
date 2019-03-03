@@ -19,11 +19,11 @@
           </h1>
           <nav class="nav g-navi">
             <ul>
-              <li><a href="#">Card</a></li>
-              <li><a href="#">News</a></li>
-              <li><a href="#">Price</a></li>
-              <li><a href="#">Access</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#card">Card</a></li>
+              <li><a href="#news">News</a></li>
+              <li><a href="#price">Price</a></li>
+              <li><a href="#access">Access</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>
           <a class="sp_menu menu_trigger">
@@ -42,7 +42,7 @@
       <span class="btn"><a href="#">お問い合わせ</a></span>
     </main>
 
-    <section class="cards">
+    <section class="cards" id="card">
       <div class="inner">
         <h2 class="section_title">Card</h2>
           <div class="flex">
@@ -83,9 +83,9 @@
             </div>
           </div><!-- end .flex -->
       </div><!-- end .inner -->
-    </section><!-- end section.cards -->
+    </section><!-- end section#card -->
 
-    <section class="news">
+    <section id="news">
       <h2 class="section_title">News</h2>
       <ul class="news-list">
         <li class="news-item">
@@ -117,8 +117,43 @@
       <div class="more">
         <a href="#">more</a>
       </div>
-    </section><!-- end section.news -->
+    </section><!-- end section#news -->
 
+    <section id="price">
+      <h2 class="section_title">Price</h2>
+      <div class="inner clearfix">
+        <img src="./images/price-img.png" class="img">
+        <div class="price-area">
+          <table class="price-list">
+            <tr>
+              <th></th><th>column1</th><th>column2</th>
+            </tr>
+            <tr>
+              <th>row1</th><td>100円</td><td>100円</td>
+            </tr>
+            <tr>
+              <th>row2</th><td>6,000円</td><td>0円</td>
+            </tr>
+            <tr>
+              <th>row3</th><td><em>6,000円</em><br>※今だけ半額</td><td>0円</td>
+            </tr>
+            <tr>
+              <th>row4</th><td>100円</td><td>100円</td>
+            </tr>
+          </table>
+          <p class="att">※ 目安なので詳しくは<a href="">お問い合わせ</a>ください。</p>
+        </div>
+      </div><!-- end .inner -->
+    </section><!-- end section#price -->
+
+    <section id="access">
+      <div class="inner">
+        <h2 class="section_title">Access</h2>
+        <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6500.168496057147!2d139.63050684172666!3d35.45270865721918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185c42d18f917d%3A0x9701843b66c162b4!2z44G_44Gq44Go44G_44KJ44GE6aeF!5e0!3m2!1sja!2sjp!4v1551428856677" width="800" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div><!-- end .inner -->
+    </section>
 
     <script
     src="https://code.jquery.com/jquery-3.3.1.min.js"

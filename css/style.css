@@ -7,9 +7,15 @@ html {
 body {
   color: #333;
   font-family: "游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro",メイリオ,Meiryo,sans-serif;
+  font-size: 1.6rem;
 }
 a:hover {
   cursor: pointer;
+}
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
 }
 
 /* ---------------------------------
@@ -162,10 +168,10 @@ width: 100%;
 /* ---------------------------------
   .news
 ------------------------------------ */
-.news {
-  padding: 68px 0 137px;
+#news {
+  padding: 68px 0 33px;
 }
-.news .news-list {
+#news .news-list {
   width: 838px;
   max-width: 100%;
   margin: 90.5px auto 16px;
@@ -217,7 +223,7 @@ width: 100%;
   /* vertical-align: top; */
 }
 
-.news .more a {
+#news .more a {
   display: block;
   width: 60px;
   height: 21px;
@@ -231,5 +237,85 @@ width: 100%;
 }
 
 /* ---------------------------------
-  .footer
+  #price
 ------------------------------------ */
+#price {
+  background-color: #efefef;
+  padding: 60px 0 102px;
+}
+
+#price .inner {
+  width: 1090px;
+  margin: 80.5px auto 0;
+}
+
+#price img {
+  max-width: 100%;
+  float: left;
+  margin-right: 122px;
+}
+
+#price .price-area {
+  float: right;
+}
+
+#price .price-list {
+  border: 1px solid #707070;
+  border-collapse: collapse;
+  max-width: 100%;
+  width: 608px;
+  line-height: 1.571;
+
+}
+#price .price-list th,
+#price .price-list td  {
+  border: 1px solid #707070;
+  padding: 14px 17px;
+}
+#price .price-list th:first-child {
+  width: 160px;
+}
+#price .price-list th {
+  background-color: #999;
+  color: #fff;
+}
+#price .price-list td {
+  background-color: #fff;
+  text-align: right;
+}
+#price .price-list em {
+  color: #E92425;
+  font-style: normal;
+}
+#price .att {
+  margin-top: 20px;
+}
+#price .att a {
+  text-decoration: underline;
+}
+
+/* ---------------------------------
+  #access
+------------------------------------ */
+#access {
+  padding: 68px 0 136px;
+}
+#access .inner {
+  width: 800px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+#access .map {
+  margin: 104px auto 40px;
+  padding-top: 50%;
+  position: relative;
+  width: 100%;
+  z-index: -10;
+}
+#access .map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
